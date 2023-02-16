@@ -87,8 +87,13 @@
 }
 
 /* loder img  */
-#loader_img{
+#loader_img,#coder_img{
     margin: auto;
+    min-width: 300px;
+    padding: 0px 15px;
+}
+#loader_img{
+    display: none;
 }
 
 /* css for image container and card  */
@@ -193,7 +198,7 @@
 @media only screen and (max-width:742px) {
     .child {
         flex-direction: column;
-        font-size: larger;
+        font-size: x-large;
         font-weight: bolder;
         padding: 3px 0px;
         margin: auto;

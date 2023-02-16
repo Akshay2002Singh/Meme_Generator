@@ -17,12 +17,13 @@ $(document).ready(function () {
 
 // load images  
 function getImage() {
-    document.getElementById("loader_img").src = "./loader.gif";
+    document.getElementById("coder_img").style = "display:None";
+    document.getElementById("loader_img").style = "display:block";
     var api = `https://api.imgflip.com/get_memes`
     // origin api 
     // https://api.imgflip.com/get_memes
 
-    fetch("https://api.imgflip.com/get_memes").then((response) => {
+    fetch(api).then((response) => {
         return response.json();
     }).then((data) => {
         if (data.success == true) {

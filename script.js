@@ -18,7 +18,7 @@ $(document).ready(function () {
 // load images  
 function getImage() {
     document.getElementById("coder_img").style = "display:None";
-    document.getElementById("loader_img").style = "display:block; margin: auto; min-width: 300px;padding: 0px 15px;";
+    document.getElementById("loader_img").style = "display:block;";
     var api = `https://api.imgflip.com/get_memes`
     // origin api 
     // https://api.imgflip.com/get_memes

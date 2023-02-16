@@ -87,7 +87,7 @@
 }
 
 /* loder img  */
-#coder_img{
+#coder_img,#loader_img{
     margin: auto;
     min-width: 300px;
     padding: 0px 15px;

@@ -16,9 +16,10 @@ $(document).ready(function () {
 });
 
 // load images  
-function getImage() {
+async function getImage() {
     document.getElementById("coder_img").style = "display:None";
     document.getElementById("loader_img").style = "display:block;";
+    await sleep(1000);
     var api = `https://api.imgflip.com/get_memes`
     // origin api 
     // https://api.imgflip.com/get_memes
@@ -80,3 +81,11 @@ function save_image(url,name) {
         })
         .catch(() => console.log('An error in downloadin gthe file sorry'));
 }
+
+
+
+function sleep(ms) {
+    return new Promise(
+    resolve => setTimeout(resolve, ms)
+    );
+    }

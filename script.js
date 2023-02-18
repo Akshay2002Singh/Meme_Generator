@@ -19,7 +19,7 @@ $(document).ready(function () {
 async function getImage() {
     document.getElementById("coder_img").style = "display:None";
     document.getElementById("loader_img").style = "display:block;";
-    await sleep(1000);
+    await sleep(500);
     var api = `https://api.imgflip.com/get_memes`
     // origin api 
     // https://api.imgflip.com/get_memes
